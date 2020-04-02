@@ -2,6 +2,14 @@ body{
     padding: 0px;
     margin: 0px;
 }
+@font-face{
+    font-family: FontAwesome;
+    src: url(/font-awesome-4.7.0/font-awesome-4.7.0/fontsfontawesome-webfont.ttf);
+}
+@font-face{
+    font-family: RobotoSlab;
+    src: url(/robotoslab/RobotoSlab-Regular.ttf);
+}
 .navbar{
     position: static;
     height: 120px;
@@ -16,7 +24,6 @@ body{
     flex-direction: column;
 }
 .supbox-top{
-    background-color: antiquewhite;
     height: 50%;
     width: 100%;
 }
@@ -28,7 +35,6 @@ body{
     flex-wrap: wrap;
 }
 .box{
-    background-color: lightcoral;
     height: 100%;
     width: 20%;
 }
@@ -39,6 +45,10 @@ body{
     flex-wrap: wrap;
 }
 .btn{
-    background-color: lightskyblue;
-    width: 10%;
+    width: 12%;
+    font-family: FontAwesome;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 25px;
+    color: white;
 }
