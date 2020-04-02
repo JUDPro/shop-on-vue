@@ -1,8 +1,8 @@
 body{
     padding: 0px;
     margin: 0px;
-}
-@font-face {
+}/*убрал границы*/
+@font-face {/*подключение шрифтов*/
     font-family: 'Font Awesome 5 Free';
     font-style: normal;
     font-weight: 400;
@@ -14,11 +14,20 @@ body{
     font-family: 'Font Awesome 5 Free';
     font-weight: 400; 
 }
-@font-face{
+@font-face{/*подключение шрифтов*/
     font-family: 'RobotoSlab';
     src: url("fonts/robotoslab/RobotoSlab-Regular.ttf");
 }
-.navbar{
+@font-face {
+	font-family: 'Oswald DemiBold';
+	src: url('fonts/e0f79531a9eb181d09140c8e33656263/oswald_demibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.svg#oswald_demibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+.navbar{/*стили для навигационной панели*/
     position: static;
     height: 120px;
     background-color: #48689a;
@@ -59,4 +68,35 @@ body{
     text-align: center;
     margin-top: 25px;
     color: white;
+}
+.logo{
+    width: 160px;
+    border-style: solid;
+    border-color: #00cdc6;
+    height: 100%;
+    font-family: 'Oswald DemiBold';
+    font-size: 35px;
+    text-align: center;
+    color: #00cdc6;
+}
+
+.for-cash{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.cash{
+    width: 37px;
+    height: 37px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 25px;
+    margin-left: 70px;
+}
+.cash-text{
+    color: white;
+    font-size: 14px;
+    font-family: "Font Awesome 5 Free", RobotoSlab;
+    margin-left: 15px;
 }
