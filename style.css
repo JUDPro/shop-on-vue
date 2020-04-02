@@ -1,0 +1,44 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.navbar{
+    position: static;
+    height: 120px;
+    background-color: #48689a;
+    display: flex;
+    justify-content: center;
+}
+.supbox{
+    height: 105px;
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+}
+.supbox-top{
+    background-color: antiquewhite;
+    height: 50%;
+    width: 100%;
+}
+.supbox-bot{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: lightcoral;
+    height: 100%;
+    width: 20%;
+}
+.for-button{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.btn{
+    background-color: lightskyblue;
+    width: 10%;
+}
