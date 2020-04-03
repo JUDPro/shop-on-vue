@@ -34,16 +34,40 @@ body{
     display: flex;
     justify-content: center;
 }
+/* Стили для блочных элементов, которые нужны для размещения уже нужных элементов*/
 .supbox{
     height: 105px;
     width: 1140px;
     display: flex;
     flex-direction: column;
 }
+
+
+.box{
+    height: 100%;
+    width: 20%;
+}
+/*Стили на верхней части нав панели*/
 .supbox-top{
     height: 50%;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+.search{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    background-color: unset;
+}
+.icon-search{
+    background-image: url('fonts/fontawesome-free-5.13.0-web/svgs/solid/search.svg');
+    width: 15px;
+    height: 15px;
+}
+/*Стили на нижней части нав панели*/
 .supbox-bot{
     height: 50%;
     width: 100%;
@@ -51,10 +75,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.box{
-    height: 100%;
-    width: 20%;
-}
+/* Стили для кнопок снизу в навигационной панели*/
 .for-button{
     flex-grow: 1;
     display: flex;
@@ -69,17 +90,23 @@ body{
     margin-top: 25px;
     color: white;
 }
+
+/* Здесь стили для лого */
 .logo{
     width: 160px;
     border-style: solid;
     border-color: #00cdc6;
-    height: 100%;
-    font-family: 'Oswald DemiBold';
+}
+.text-logo{
     font-size: 35px;
+    font-family: 'Oswald DemiBold';
     text-align: center;
     color: #00cdc6;
+    line-height: 39px;
+    padding-bottom: 8px;
 }
 
+/* Здесь стили для символа в правом нижнем углу нав панели*/
 .for-cash{
     display: flex;
     align-items: center;
