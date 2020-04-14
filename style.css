@@ -234,3 +234,108 @@ body{
     top: 10px;
     left: 11px;
 }
+/*Это поле должно вылазить после наведения на значок с пакетом :)*/
+.cash-panel{
+    background-color: white;
+    position: absolute;
+    height: 435px;
+    width: 360px;
+    top: 55px;
+    left: -210px;
+    box-shadow: 0px 1px 8px 0px;
+}
+.tr{
+    position: absolute;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    left: 220px;
+    top: -5px;
+    transform: rotate(45deg);
+}
+.content-cash{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.product{
+    position: absolute;
+    width: 300px;
+    height: 230px;
+    right: 30px;
+    top: 20px;
+}
+.prd{
+    width: 100%;
+    height: 105px;
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+.info-prd{
+    flex-grow: 1;
+    font-size: 14px;
+    padding-left: 15px;
+    position: relative;
+}
+.txt-prd{
+    position: absolute;
+    top: 10px;
+    color: gray;
+}
+.cash-prd{
+    position: absolute;
+    top: 45px;
+    color: #48689a;
+}
+.img-prd{
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.box-img{
+    background-color: gray;
+    width: 69px;
+    height: 70px;
+}
+.del{
+    width: 15px;
+    height: 100%;
+    position: relative;
+}
+.fa-times{
+    top: 10px;
+    position: absolute;
+    right: 0;
+    color: gray;
+    font-size: 14px;
+}
+.btn-product{
+    position: absolute;
+    width: 300px;
+    height: 110px;
+    bottom: 50px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.continue, .procced{
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.continue{
+    width: 99%;
+    border: 2px solid #48689a;
+    color: #48689a;
+}
+.procced{
+    width: 100%;
+    background-color: #48689a;
+    color: white;
+}
+
