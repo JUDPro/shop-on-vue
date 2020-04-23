@@ -18,9 +18,9 @@
                     </div>
                 </div>
                 <div class="other box">
-                    <div class="lang">English<i class="fa fa-sort-down" aria-hidden="true"></i></div>
-                    <div class="usd">USD<i class="fa fa-sort-down" aria-hidden="true"></i></div>
-                    <div class="login">Login</div>
+                    <div class="lang btn-o">English<i class="fa fa-sort-down" aria-hidden="true"></i></div>
+                    <div class="usd btn-o">USD<i class="fa fa-sort-down" aria-hidden="true"></i></div>
+                    <div class="login btn-o">Login</div>
                 </div>
             </div>
             <div class="posbox">
@@ -98,9 +98,6 @@ export default {
 /*Позиционирование верхних элементов*/
 .search{
     flex-grow: 1;
-}
-.search{
-    flex-grow: 1;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -111,8 +108,8 @@ export default {
 .form{
     width: 50%;
     position: relative;
-    height: 50px;
     padding-top: 20px;
+    height: 25px;
     overflow: hidden;
 }
 .form input{
@@ -153,7 +150,7 @@ export default {
 .form input:focus + .label-search .content-search, 
 .form input:valid + .label-search .content-search{
     transform: translateY(-120%)scale(0.9);
-    font-size: 14px;
+    font-size: 12px;
     color: white;
 }
 .form input:focus + .label-search::after,
@@ -188,8 +185,13 @@ export default {
     align-items: center;
     font-size: 12px;
 }
-.lang, .usd{
+.btn-o{
     display: flex;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn-o:hover{
+    background-color: #466392;
 }
 .fa-sort-down{
     padding-left: 5px;
@@ -218,12 +220,18 @@ export default {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-content: center;
 }
 .btn{
     display: flex;
     font-size: 14px;
-    margin-top: 25px;
     color: white;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #466392;
 }
 
 /*Для корзины и ценника*/
