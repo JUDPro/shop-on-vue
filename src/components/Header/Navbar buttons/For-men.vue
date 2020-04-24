@@ -1,5 +1,8 @@
 <template>
     <div class="for-men">
+        <div class="container">
+            <div class="pointer"></div>
+        </div>
     </div>
 </template>
 
@@ -8,4 +11,29 @@ export default {}
 </script>
 
 <style scoped>
+.for-men{
+    position: absolute;
+    width: 100%;
+    top: 115px;
+    height: 345px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    position: relative;
+
+    width: 1140px;
+    height: 345px;
+    background-color: tomato;
+}
+.pointer{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background-color: tomato;
+    top: -7px;
+    left: 40%;
+}
 </style>

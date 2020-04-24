@@ -1,5 +1,5 @@
 <template>
-    <div id="navbar">
+    <div class="navbar">
         <div class="navbox">
             <div class="posbox">
                 <div class="contact box">
@@ -32,9 +32,8 @@
                 <div class="for-button box">
                     <div class="btn home">Home</div>
                     <div class="btn shop">Shop<i class="fa fa-sort-down" aria-hidden="true"></i></div>
-                    <div class="btn men">Men<i class="fa fa-sort-down" aria-hidden="true"></i>
-                        <forMen></forMen>
-                    </div>
+                    <div class="btn men" @click="seen = !seen">Men<i class="fa fa-sort-down" aria-hidden="true"></i>
+                    </div><forMen v-if="seen"></forMen>
                     <div class="btn women">Women<i class="fa fa-sort-down" aria-hidden="true"></i></div>
                     <div class="btn page">Page<i class="fa fa-sort-down" aria-hidden="true"></i></div>
                     <div class="btn blog">Blog</div>
@@ -45,6 +44,7 @@
                         <i class="fa fa-shopping-bag"></i>
                         <div class="Number-of-goods">2</div>
                     </div>
+                    <Goods></Goods>
                     <div class="cash-text">$25.00</div>
                 </div>
             </div>
@@ -54,9 +54,16 @@
 
 <script>
 import forMen from './Navbar buttons/For-men.vue'
+import Goods from './Navbar buttons/Goods.vue'
 export default {
+    data(){
+        return{
+            seen: false
+        }
+    },
     components:{
-      forMen
+      forMen,
+      Goods
     }
 }
 </script>
@@ -64,7 +71,9 @@ export default {
 <style scoped>
 @import "../fonts/fontawesome-free-5.13.0-web/css/all.css";
 
-#navbar{/*стили для навигационной панели*/
+.navbar{/*стили для навигационной панели*/
+    position: absolute;
+    width: 100%;
     height: 120px;
     background-color: #48689a;
     display: flex;
@@ -83,8 +92,8 @@ export default {
     padding-right: 15px;
 }
 .box{
-    width: 20%;
     height: 100%;
+    width: 20%;
 }
 .posbox{
     height: 50%;
@@ -102,19 +111,19 @@ export default {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    width: 300px;
     background-color: unset;
 }
 .form{
-    width: 50%;
     position: relative;
     padding-top: 20px;
     height: 25px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .form input{
     background-color: #48689a;
-    width: 100%;
+    width: 300px;
     height: 100%;
     color: white;
     border: none;
@@ -125,7 +134,7 @@ export default {
     bottom: 0px;
     left: 0%;
     height: 100%;
-    width: 100%;
+    width: 300px;
     pointer-events: none;
     border-bottom: 1px solid white;
 }
@@ -173,7 +182,19 @@ export default {
     justify-content: space-between;
     font-size: 12px;
     align-items: center;
+    cursor: default;
 }
+/*@media screen and (max-width: 1110px) {
+    .contact{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 910px) {
+    .contact{
+        font-size: 8px;
+    }
+}*/
+
 .fa-phone{
     transform: rotate(90deg);
     font-size: 10px;
@@ -204,6 +225,8 @@ export default {
     width: 160px;
     border-style: solid;
     border-color: #00cdc6;
+    cursor: default;
+
 }
 .text-logo{
     font-size: 35px;
@@ -267,12 +290,14 @@ export default {
     color: #48689a;
     text-align: center;
     font-size: 12px;
+    cursor: default;
 }
 .cash-text{
     color: white;
     font-size: 14px;
     font-family: "Font Awesome 5 Free", RobotoSlab;
     padding-left: 15px;
+    cursor: default;
 }
 /*-----------------------------------*/
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="app">
     <Navbar></Navbar>
     <!--router-link to="/Home">About</router-link-->
     <!--router-link to="/about">About</router-link-->
@@ -40,5 +40,11 @@
 		url('./components/fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('./components/fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.ttf') format('truetype'), /* Safari, Android, iOS */
         url('./components/fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.svg#oswald_demibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+.app{
+  width: 100%;
+  height: 100%;
+  min-width: 1140px;
+  position: relative;
 }
 </style>
