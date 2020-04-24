@@ -31,11 +31,13 @@
                 </div>
                 <div class="for-button box">
                     <div class="btn home">Home</div>
-                    <div class="btn shop">Shop<i class="fa fa-sort-down" aria-hidden="true"></i></div>
-                    <div class="btn men" @click="seen = !seen">Men<i class="fa fa-sort-down" aria-hidden="true"></i>
-                    </div><forMen v-if="seen"></forMen>
-                    <div class="btn women">Women<i class="fa fa-sort-down" aria-hidden="true"></i></div>
-                    <div class="btn page">Page<i class="fa fa-sort-down" aria-hidden="true"></i></div>
+                    <div class="btn shop pointer">Shop</div>
+                    <div class="btn men pointer" @click="buttonManVisibility = !buttonManVisibility; rotate(buttonManVisibility)">Men</div>
+                    <transition name="forMenButtonAnimation">
+                        <forMen v-if="buttonManVisibility"></forMen>
+                    </transition>
+                    <div class="btn women pointer">Women</div>
+                    <div class="btn page pointer">Page</div>
                     <div class="btn blog">Blog</div>
                     <div class="btn contactus">Contact us</div>
                 </div>
@@ -44,7 +46,7 @@
                         <i class="fa fa-shopping-bag"></i>
                         <div class="Number-of-goods">2</div>
                     </div>
-                    <Goods></Goods>
+                    <!--Goods></Goods-->
                     <div class="cash-text">$25.00</div>
                 </div>
             </div>
@@ -54,16 +56,25 @@
 
 <script>
 import forMen from './Navbar buttons/For-men.vue'
-import Goods from './Navbar buttons/Goods.vue'
+//import Goods from './Navbar buttons/Goods.vue'
 export default {
     data(){
         return{
-            seen: false
+            buttonManVisibility: false
         }
     },
     components:{
       forMen,
-      Goods
+      //Goods
+    },
+    methods:{
+        rotate(i){
+            if(i == true)
+            {
+                document.getElementsByClassName('men')[0].classList.add('active');
+            }
+            else document.getElementsByClassName('men')[0].classList.remove('active');
+        }
     }
 }
 </script>
@@ -205,6 +216,7 @@ export default {
     color: white;
     align-items: center;
     font-size: 12px;
+    -webkit-user-select: none;
 }
 .btn-o{
     display: flex;
@@ -213,9 +225,6 @@ export default {
 }
 .btn-o:hover{
     background-color: #466392;
-}
-.fa-sort-down{
-    padding-left: 5px;
 }
 /*-----------------------------------*/
 
@@ -226,6 +235,7 @@ export default {
     border-style: solid;
     border-color: #00cdc6;
     cursor: default;
+    -webkit-user-select: none;
 
 }
 .text-logo{
@@ -249,13 +259,54 @@ export default {
     display: flex;
     font-size: 14px;
     color: white;
-    padding: 10px;
+    padding: 10px 25px 10px 10px;
     margin-top: 10px;
     cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
 }
 .btn:hover{
     background-color: #466392;
 }
+.pointer:before,
+.pointer:after{
+    content: '';
+    position: absolute;
+    width: 1.5px;
+    height: 6px;
+    background-color: white;
+    border-radius: 25px;
+    top: 17px;
+    transition: all 0.3s ease 0s;
+}
+.pointer::before{
+    right: 13.4px;
+    transform: rotate(45deg);
+}
+.pointer::after{
+    right: 17px;
+    transform: rotate(-45deg);
+}
+.pointer.active::before{
+    right: 13.4px;
+    transform: rotate(135deg);
+}
+.pointer.active::after{
+    right: 17px;
+    transform: rotate(-135deg);
+}
+
+
+/*Animations for components*/
+.forMenButtonAnimation-enter-active,.forMenButtonAnimation-leave-active{
+    transition: all .15s;
+}
+.forMenButtonAnimation-enter,.forMenButtonAnimation-leave-to{
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+/*-----------------------------------*/
 
 /*Для корзины и ценника*/
 .cash{
@@ -264,6 +315,7 @@ export default {
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
+    -webkit-user-select: none;
 }
 .border-for-cash{
     width: 37px;

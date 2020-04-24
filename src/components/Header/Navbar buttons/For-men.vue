@@ -1,7 +1,6 @@
 <template>
     <div class="for-men">
         <div class="container">
-            <div class="pointer"></div>
         </div>
     </div>
 </template>
@@ -27,7 +26,8 @@ export default {}
     height: 345px;
     background-color: tomato;
 }
-.pointer{
+.container:after{
+    content: '';
     position: absolute;
     width: 20px;
     height: 20px;
