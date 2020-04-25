@@ -29,17 +29,35 @@
                         <div class="text-logo">weshop</div>
                     </div>
                 </div>
-                <div class="for-button box">
+                <div class="for-button box" name="btn-form">
+
+
                     <div class="btn home">Home</div>
-                    <div class="btn shop pointer">Shop</div>
-                    <div class="btn men pointer" @click="buttonManVisibility = !buttonManVisibility; rotate(buttonManVisibility)">Men</div>
-                    <transition name="forMenButtonAnimation">
-                        <forMen v-if="buttonManVisibility"></forMen>
+
+                    <div class="btn shop pointer" @click="UrClass = 'shop'; Visibility = !Visibility; rotate(Visibility);">Shop</div>
+
+                    <div class="btn men pointer" 
+                        @mouseover=" UrClass ='men'; Visibility = !Visibility; rotate(Visibility);"
+                        @mouseleave="Visibility = !Visibility; rotate(Visibility)"
+                    >Men</div>
+                    <transition name="forButtonAnimation">
+                        <forMen v-if="Visibility && UrClass == 'men'"></forMen>
                     </transition>
-                    <div class="btn women pointer">Women</div>
-                    <div class="btn page pointer">Page</div>
+
+                    <div class="btn women pointer" 
+                        @mouseover=" UrClass ='women'; Visibility = !Visibility; rotate(Visibility);"
+                        @mouseleave="Visibility = !Visibility; rotate(Visibility)"
+                    >Women</div>
+                    <transition name="forButtonAnimation">
+                        <forWomen v-if="Visibility && UrClass == 'women'"></forWomen>
+                    </transition>
+
+                    <div class="btn page pointer" @click="UrClass = 'page'; Visibility = !Visibility; rotate(Visibility);">Page</div>
+
                     <div class="btn blog">Blog</div>
+
                     <div class="btn contactus">Contact us</div>
+
                 </div>
                 <div class="cash box">
                     <div class="border-for-cash">
@@ -48,6 +66,8 @@
                     </div>
                     <!--Goods></Goods-->
                     <div class="cash-text">$25.00</div>
+
+
                 </div>
             </div>
         </div>
@@ -56,24 +76,27 @@
 
 <script>
 import forMen from './Navbar buttons/For-men.vue'
+import forWomen from './Navbar buttons/For-women.vue'
 //import Goods from './Navbar buttons/Goods.vue'
 export default {
     data(){
         return{
-            buttonManVisibility: false
+            Visibility: false,
+            UrClass: '',
         }
     },
     components:{
       forMen,
+      forWomen,
       //Goods
     },
     methods:{
         rotate(i){
             if(i == true)
             {
-                document.getElementsByClassName('men')[0].classList.add('active');
+                document.getElementsByClassName(this.UrClass)[0].classList.add('active');
             }
-            else document.getElementsByClassName('men')[0].classList.remove('active');
+            else document.getElementsByClassName(this.UrClass)[0].classList.remove('active');
         }
     }
 }
@@ -277,7 +300,7 @@ export default {
     background-color: white;
     border-radius: 25px;
     top: 17px;
-    transition: all 0.3s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 .pointer::before{
     right: 13.4px;
@@ -298,10 +321,10 @@ export default {
 
 
 /*Animations for components*/
-.forMenButtonAnimation-enter-active,.forMenButtonAnimation-leave-active{
+.forButtonAnimation-enter-active,.forButtonAnimation-leave-active{
     transition: all .15s;
 }
-.forMenButtonAnimation-enter,.forMenButtonAnimation-leave-to{
+.forButtonAnimation-enter,.forButtonAnimation-leave-to{
     transform: translateY(-20px);
     opacity: 0;
 }
