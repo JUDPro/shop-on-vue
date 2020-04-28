@@ -2,20 +2,7 @@
     <div class="goods">
         <div class="container">
             <div class="content">
-                <div class="product">
-                    <img src="https://sun9-20.userapi.com/c857016/v857016902/d0916/unoNMEedTfg.jpg" alt="image">
-                    <div class="info-box">
-                        <div class="name">Denim t-shirt For Boys</div>
-                        <div class="cash">$289 - $250</div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="https://sun9-20.userapi.com/c857016/v857016902/d0916/unoNMEedTfg.jpg" alt="image">
-                    <div class="info-box">
-                        <div class="name">Denim t-shirt For Boys</div>
-                        <div class="cash">$289 - $250</div>
-                    </div>
-                </div>
+                <Product></Product>
             </div>
             <div class="button">
                 <div class="btn continue">CONTINUE SHIPPING</div>
@@ -25,19 +12,23 @@
     </div>
 </template>
 <script>
-export default {}
+import Product from './Product'
+export default {
+    components:{
+        Product
+    }
+}
 </script>
 <style scoped>
 .goods{
     background-color: white;
     position: absolute;
-    height: 435px;
-    width: 360px;
-    top: 63px;
-    left: -150px;
+    width: 320px;
+    height: auto;
+    top: 55px;
+    left: -175px;
     box-shadow: 0px 1px 12px -3px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 .goods:after{
@@ -50,40 +41,26 @@ export default {}
     right: 116px;
     transform: rotate(45deg);
 }
+.goods:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    top: -60px;
+    right: 100px;
+}
 .container{
-    width: 300px;
-    height: 350px;
+    width: 80%;
+    height: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 /*Для товаров*/
 .content{
     width: 100%;
-    height: 220px;
-    display: block;
-}
-.product{
-    height: 85px;
-    width: 100%;
-    display: flex;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(139, 139, 139, 0.5);
-}
-img{
-    width: 65px;
-    height: 65px;
-}
-.info-box{
-    position: relative;
-    height: 75px;
-    left: 15px;
-}
-.cash{
-    position: relative;
-    top: 10px;
-    color: #48689a;
+    height: 100%;
 }
 /*--------------------------------*/
 
@@ -105,18 +82,18 @@ img{
     cursor: pointer;
 }
 .continue{
-    width: 296px;
+    width: 99%;
     border: 2px solid #48689a;
     color: #48689a;
 }
 .continue:hover{
-    width: 294px;
+    width: 100%;
     border: 3px solid #466392;
     color: #466392;
     font-size: 15px;
 }
 .procced{
-    width: 300px;
+    width: 100%;
     background-color: #48689a;
     color: white;
 }
@@ -124,5 +101,6 @@ img{
     background-color: #466392;
     font-size: 15px;
 }
+
 /*--------------------------------*/
 </style>

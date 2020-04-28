@@ -12,17 +12,16 @@ export default {}
 <style scoped>
 .for-women{
     position: absolute;
-    width: 100%;
-    top: 115px;
+    width: 1140px;
+    top: 50px;
+    left: -512px;
     height: 345px;
-    left: 0;
     display: flex;
     justify-content: center;
 }
 .container{
     position: relative;
-
-    width: 1140px;
+    width: 100%;
     height: 345px;
     background-color: darkorchid;
 }
@@ -35,5 +34,13 @@ export default {}
     background-color:darkorchid;
     top: -7px;
     left: 48.3%;
+}
+.container:before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    left: 45%;
 }
 </style>

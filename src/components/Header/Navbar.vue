@@ -37,21 +37,23 @@
                     <div class="btn shop pointer" @click="UrClass = 'shop'; Visibility = !Visibility; rotate(Visibility);">Shop</div>
 
                     <div class="btn men pointer" 
-                        @mouseover=" UrClass ='men'; Visibility = !Visibility; rotate(Visibility);"
+                        @mouseenter=" UrClass ='men'; Visibility = !Visibility; rotate(Visibility);"
                         @mouseleave="Visibility = !Visibility; rotate(Visibility)"
-                    >Men</div>
-                    <transition name="forButtonAnimation">
-                        <forMen v-if="Visibility && UrClass == 'men'"></forMen>
-                    </transition>
+                    >Men
+                        <transition name="forButtonAnimation">
+                            <forMen v-if="Visibility && UrClass == 'men'"></forMen>
+                        </transition>
+                    </div>
 
                     <div class="btn women pointer" 
-                        @mouseover=" UrClass ='women'; Visibility = !Visibility; rotate(Visibility);"
+                        @mouseenter=" UrClass ='women'; Visibility = !Visibility; rotate(Visibility);"
                         @mouseleave="Visibility = !Visibility; rotate(Visibility)"
-                    >Women</div>
-                    <transition name="forButtonAnimation">
-                        <forWomen v-if="Visibility && UrClass == 'women'"></forWomen>
-                    </transition>
-
+                    >Women
+                        <transition name="forButtonAnimation">
+                            <forWomen v-if="Visibility && UrClass == 'women'"></forWomen>
+                        </transition>
+                    </div>
+                   
                     <div class="btn page pointer" @click="UrClass = 'page'; Visibility = !Visibility; rotate(Visibility);">Page</div>
 
                     <div class="btn blog">Blog</div>
@@ -60,11 +62,16 @@
 
                 </div>
                 <div class="cash box">
-                    <div class="border-for-cash">
+                    <div class="border-for-cash"
+                        @mouseenter=" UrClass ='border-for-cash'; Visibility = !Visibility; rotate(Visibility);"
+                        @mouseleave="Visibility = !Visibility; rotate(Visibility)"
+                    >
                         <i class="fa fa-shopping-bag"></i>
                         <div class="Number-of-goods">2</div>
+                        <transition name="forButtonAnimation">
+                            <Goods v-if="Visibility && UrClass == 'border-for-cash'"></Goods>
+                        </transition>
                     </div>
-                    <!--Goods></Goods-->
                     <div class="cash-text">$25.00</div>
 
 
@@ -77,7 +84,8 @@
 <script>
 import forMen from './Navbar buttons/For-men.vue'
 import forWomen from './Navbar buttons/For-women.vue'
-//import Goods from './Navbar buttons/Goods.vue'
+import Goods from './Navbar buttons/For goods components/Goods'
+
 export default {
     data(){
         return{
@@ -88,7 +96,7 @@ export default {
     components:{
       forMen,
       forWomen,
-      //Goods
+      Goods
     },
     methods:{
         rotate(i){
@@ -284,7 +292,6 @@ export default {
     color: white;
     padding: 10px 25px 10px 10px;
     margin-top: 10px;
-    cursor: pointer;
     position: relative;
     -webkit-user-select: none;
 }
@@ -319,7 +326,6 @@ export default {
     transform: rotate(-135deg);
 }
 
-
 /*Animations for components*/
 .forButtonAnimation-enter-active,.forButtonAnimation-leave-active{
     transition: all .15s;
@@ -347,6 +353,10 @@ export default {
     border-color: white;
     border-radius: 25px;
     position: relative;
+}
+.border-for-cash:hover{
+    background-color: #466392;
+    border: 1px solid rgb(214, 214, 214);
 }
 .fa-shopping-bag{
     color: white;

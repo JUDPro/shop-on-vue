@@ -10,19 +10,18 @@ export default {}
 </script>
 
 <style scoped>
-.for-men{
+.for-men{ 
     position: absolute;
-    width: 100%;
-    top: 115px;
+    width: 1140px;
+    top: 50px;
+    left: -428px;
     height: 345px;
-    left: 0;
     display: flex;
     justify-content: center;
 }
 .container{
     position: relative;
-
-    width: 1140px;
+    width: 100%;
     height: 345px;
     background-color: tomato;
 }
@@ -35,5 +34,13 @@ export default {}
     background-color: tomato;
     top: -7px;
     left: 40%;
+}
+.container:before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    left: 37%;
 }
 </style>
