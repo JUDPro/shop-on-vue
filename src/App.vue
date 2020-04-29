@@ -3,15 +3,19 @@
     <Navbar></Navbar>
     <!--router-link to="/Home">About</router-link-->
     <!--router-link to="/about">About</router-link-->
+    <div class="block"></div>
     <router-view/>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
   import Navbar from './components/Header/Navbar.vue'
+  import Footer from './components/Footer/Footer.vue'
   export default{
     components:{
-      Navbar
+      Navbar,
+      Footer
     }
   }
 </script>
@@ -46,5 +50,9 @@
   height: 100%;
   min-width: 1140px;
   position: relative;
+}
+.block{
+  height: 1500px;
+  width: 100%;
 }
 </style>

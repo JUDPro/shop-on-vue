@@ -1,8 +1,8 @@
 <template>
     <div class="goods">
         <div class="container">
-            <div class="content">
-                <Product></Product>
+            <div class="content active">
+                <Product v-for="product in products" :key="product"></Product>
             </div>
             <div class="button">
                 <div class="btn continue">CONTINUE SHIPPING</div>
@@ -14,6 +14,11 @@
 <script>
 import Product from './Product'
 export default {
+    data(){
+        return{
+            products: 4
+        }
+    },
     components:{
         Product
     }
@@ -61,6 +66,14 @@ export default {
 .content{
     width: 100%;
     height: 100%;
+    max-height: 400px;
+}
+.active{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0px;
 }
 /*--------------------------------*/
 
@@ -73,6 +86,7 @@ export default {
     align-items: center;
     justify-content: space-evenly;
 }
+
 .btn{
     height: 50px;
     font-size: 14px;

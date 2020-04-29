@@ -282,21 +282,29 @@ export default {
 .for-button{
     flex-grow: 1;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    justify-content: space-between; 
     align-content: center;
+}
+/*Короче. Сверху justify-content работает для браузеров, где свойство space-eventy не работает*/
+@supports not (-ms-ime-align: auto) {
+  .for-button {
+    justify-content: space-evenly
+  }
 }
 .btn{
     display: flex;
     font-size: 14px;
     color: white;
-    padding: 10px 25px 10px 10px;
+    padding: 10px 10px 10px 10px;
     margin-top: 10px;
     position: relative;
     -webkit-user-select: none;
 }
 .btn:hover{
     background-color: #466392;
+}
+.pointer{
+    padding-right: 25px;
 }
 .pointer:before,
 .pointer:after{
