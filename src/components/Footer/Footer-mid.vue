@@ -31,12 +31,36 @@
                 <div class="insta-feed">
                     <h5>INSTAGRAM FEED</h5>
                     <div class="for-img">
-                        <div class="img"></div>
-                        <div class="img"></div>
-                        <div class="img"></div>
-                        <div class="img"></div>
+                        <div class="img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="img">
+                            <img src="" alt="">
+                        </div>
                     </div>
-
+                </div>
+                <div class="card">
+                    <div class="for-card-box">
+                        <img src="../logo brands/card/business-and-finance.svg" alt="">
+                    </div>
+                    <div class="for-card-box">
+                        <img src="../logo brands/card/credit-card.svg" alt="">
+                    </div>
+                    <div class="for-card-box">
+                        <img src="../logo brands/card/kiwi.svg" alt="">
+                    </div>
+                    <div class="for-card-box">
+                        <img src="../logo brands/card/money-card.svg" alt="">
+                    </div>
+                    <div class="for-card-box">
+                        <img src="../logo brands/card/paypal.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,9 +134,23 @@ export default {}
     justify-content: space-between;
 }
 .img{
-    width: 60px;
-    height: 60px;
-    background-color: crimson;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+.card{
+    position: relative;
+    width: 100%;
+    height: 75px;
+    border-top: 1px solid rgba(139, 139, 139, 0.5);
+    border-bottom: 1px solid rgba(139, 139, 139, 0.5);
+    top: 15px;
+    display: flex;
+    align-items: center;
+}
+.for-card-box{
+    width: 80px;
+    height: 30px;
 }
 .bot{
     width: 100%;
