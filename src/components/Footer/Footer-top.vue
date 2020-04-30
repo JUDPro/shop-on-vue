@@ -29,7 +29,7 @@ export default {}
 .content{
     display: flex;
     width: 1140px;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .brand{
     width: 100px;

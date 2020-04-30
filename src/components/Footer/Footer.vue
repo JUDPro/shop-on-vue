@@ -23,7 +23,7 @@ export default {
 @import "../fonts/fontawesome-free-5.13.0-web/css/all.css";
 .footer{
     position: relative;
-    height: 725px;
+    height: 705px;
     width: 100%;
     bottom: 0px;
     font-family: "Font Awesome 5 Free", RobotoSlab;
