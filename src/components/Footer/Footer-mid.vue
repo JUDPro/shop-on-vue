@@ -32,16 +32,16 @@
                     <h5>INSTAGRAM FEED</h5>
                     <div class="for-img">
                         <div class="img">
-                            <img src="" alt="">
+                            <img src="https://sun9-20.userapi.com/c857016/v857016902/d0916/unoNMEedTfg.jpg" alt="">
                         </div>
                         <div class="img">
-                            <img src="" alt="">
+                            <img src="https://sun9-20.userapi.com/c857016/v857016902/d0916/unoNMEedTfg.jpg" alt="">
                         </div>
                         <div class="img">
-                            <img src="" alt="">
+                            <img src="https://sun9-20.userapi.com/c857016/v857016902/d0916/unoNMEedTfg.jpg" alt="">
                         </div>
                         <div class="img">
-                            <img src="" alt="">
+                            <img src="https://sun9-20.userapi.com/c857016/v857016902/d0916/unoNMEedTfg.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                 <div class="pic googleplus"><img src="../logo brands/social/logotype.svg" alt=""></div>
             </div>
         </div>
-    </div>
+    </div> 
 </template>
 
 <script>
@@ -89,6 +89,7 @@ export default {}
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: default;
 }
 .content{
     width: 260px;
@@ -100,6 +101,7 @@ export default {}
     height: 360px;
     display: flex;
     align-items: center;
+    justify-content: center ;
 }
 .text-logo{
     font-size: 35px;
@@ -117,6 +119,7 @@ export default {}
     display: flex;
     flex-direction: column;
     top: 15px;
+
 }
 .support{
     position: relative;

@@ -22,5 +22,6 @@ export default {}
 .text{
     color: white;
     font-size: 12px;
+    cursor: default;
 }
 </style>
