@@ -35,6 +35,7 @@ export default {
     box-shadow: 0px 1px 12px -3px;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 .goods:after{
     content: '';

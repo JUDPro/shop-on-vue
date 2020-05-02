@@ -1,9 +1,7 @@
 <template>
   <div class="app">
     <Navbar></Navbar>
-    <!--router-link to="/Home">About</router-link-->
-    <!--router-link to="/about">About</router-link-->
-    <div class="block"></div>
+    <router-link to="/Home"></router-link>
     <router-view/>
     <Footer></Footer>
   </div>
@@ -47,12 +45,7 @@
 }
 .app{
   width: 100%;
-  height: 100%;
-  min-width: 1140px;
-  position: relative;
-}
-.block{
-  height: 1500px;
-  width: 100%;
+  min-width: 1270px;
+  position: absolute;
 }
 </style>

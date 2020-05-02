@@ -114,7 +114,7 @@ export default {
 @import "../fonts/fontawesome-free-5.13.0-web/css/all.css";
 
 .navbar{/*стили для навигационной панели*/
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 120px;
     background-color: #48689a;

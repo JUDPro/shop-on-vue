@@ -58,6 +58,7 @@ export default {}
     display: flex;
     justify-content: center;
     box-shadow: black 0px 2px 13px -5px;
+    z-index: 1;
 }
 .container{
     position: relative;
