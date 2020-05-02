@@ -15,6 +15,26 @@
       </div>
       <div class="border next">N<br/>E<br/>X<br/>T</div>
     </div>
+    <div class="content">
+      <div class="goods">
+
+      </div>
+      <div class="new-collection">
+
+      </div>
+      <div class="personal-assistent">
+
+      </div>
+      <div class="featured">
+
+      </div>
+      <div class="latest-news">
+
+      </div>
+      <div class="footer">
+
+      </div>
+    </div>
   </div>
 </template>
 
@@ -82,5 +102,36 @@ export default {
 .btn:hover{
   background-color: #466392;
   font-size: 18px;
+}
+.content{
+  height: auto;
+  width: 100%;
+}
+.goods{
+  height: 1210px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.new-collection{
+  height: 970px;
+  width: 100%;
+}
+.personal-assistent{
+  height: 600px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.featured{
+  height: 1060px;
+  width: 100%;
+}
+.latest-news{
+  height: 700px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.footer{
+  height: 970px;
+  width: 100%;
 }
 </style>
