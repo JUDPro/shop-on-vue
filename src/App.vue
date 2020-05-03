@@ -18,7 +18,7 @@
   }
 </script>
 
-<style>
+<style scoped>
 @font-face {/*подключение шрифтов*/
     font-family: 'Font Awesome 5 Free';
     font-style: normal;
@@ -45,6 +45,7 @@
 }
 .app{
   width: 100%;
+  height: 100%;
   min-width: 1270px;
   position: absolute;
 }

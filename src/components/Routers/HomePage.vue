@@ -20,7 +20,24 @@
 
       </div>
       <div class="new-collection">
-
+        <div class="title"></div>
+        <div class="for-btn">
+          <div class="btn-col"></div>
+          <div class="btn-col"></div>
+          <div class="btn-col"></div>
+          <div class="btn-col"></div>
+          <div class="btn-col"></div>
+        </div>
+        <div class="for-goods">
+          <div class="goods-col"></div>
+          <div class="goods-col"></div>
+          <div class="goods-col"></div>
+          <div class="goods-col"></div>
+          <div class="goods-col"></div>
+          <div class="goods-col"></div>
+          <div class="goods-col"></div>
+          <div class="goods-col"></div>
+        </div>
       </div>
       <div class="personal-assistent">
 
@@ -32,7 +49,7 @@
 
       </div>
       <div class="footer">
-
+qweqweqweqweqweqeqwe
       </div>
     </div>
   </div>
@@ -116,6 +133,7 @@ export default {
   height: 970px;
   width: 100%;
 }
+
 .personal-assistent{
   height: 600px;
   width: 100%;
