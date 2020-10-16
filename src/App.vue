@@ -19,7 +19,7 @@
 </script>
 
 <style scoped>
-@font-face {/*подключение шрифтов*/
+@font-face {/*подключение шрифтов*/ 
     font-family: 'Font Awesome 5 Free';
     font-style: normal;
     font-weight: 400;
