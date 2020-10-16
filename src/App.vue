@@ -30,7 +30,7 @@
   .far {
     font-family: 'Font Awesome 5 Free';
     font-weight: 400; 
-}
+} 
 @font-face{/*подключение шрифтов*/
     font-family: 'RobotoSlab';
     src: url("../public/fonts/robotoslab/RobotoSlab-Regular.ttf");
