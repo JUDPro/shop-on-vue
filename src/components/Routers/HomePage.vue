@@ -49,7 +49,6 @@
 
       </div>
       <div class="footer">
-qweqweqweqweqweqeqwe
       </div>
     </div>
   </div>

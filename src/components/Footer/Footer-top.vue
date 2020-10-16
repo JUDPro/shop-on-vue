@@ -1,12 +1,12 @@
 <template>
     <div class="container">
         <div class="content">
-            <div class="brand"><img src="../logo brands/dc-shoes.svg" alt=""></div>
-            <div class="brand"><img src="../logo brands/armani-jeans-seeklogo.com.svg" alt=""></div>
-            <div class="brand"><img src="../logo brands/expo-milano-2015.svg" alt=""></div>
-            <div class="brand"><img src="../logo brands/supra.svg" alt=""></div>
-            <div class="brand"><img src="../logo brands/vans-seeklogo.com.svg" alt=""></div>
-            <div class="brand"><img src="../logo brands/we-heart-it-seeklogo.com.svg" alt=""></div> 
+            <div class="brand"><img src="../../../public/logo brands/dc-shoes.svg" alt=""></div>
+            <div class="brand"><img src="../../../public/logo brands/armani-jeans-seeklogo.com.svg" alt=""></div>
+            <div class="brand"><img src="../../../public/logo brands/expo-milano-2015.svg" alt=""></div>
+            <div class="brand"><img src="../../../public/logo brands/supra.svg" alt=""></div>
+            <div class="brand"><img src="../../../public/logo brands/vans-seeklogo.com.svg" alt=""></div>
+            <div class="brand"><img src="../../../public/logo brands/we-heart-it-seeklogo.com.svg" alt=""></div> 
         </div>
     </div>
 </template>

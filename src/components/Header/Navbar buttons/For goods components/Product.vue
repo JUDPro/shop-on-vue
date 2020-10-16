@@ -1,6 +1,6 @@
 <template>
     <div class="product">
-        <img src="https://sun9-20.userapi.com/c857016/v857016902/d0916/unoNMEedTfg.jpg" alt="image">
+        <img src="https://pbs.twimg.com/media/Dbpx-nbXkAATsVy.png:large" alt="image">
         <div class="info-box">
             <div class="name">Denim t-shirt For Boys</div>
             <div class="cash">$289 - $250</div>

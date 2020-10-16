@@ -24,7 +24,7 @@
             <div class="content-img">
                 <div class="img">
                     <div class="discount">50% OFF</div>
-                    <img src="../../logo brands/Picrandom-разное-4069630.png" alt="">
+                    <img src="https://clipart-db.ru/file_content/rastr/girl-017.png" alt="">
                 </div>
             </div>
             <div class="content">

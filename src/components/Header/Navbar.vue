@@ -111,7 +111,7 @@ export default {
 </script>
 
 <style scoped>
-@import "../fonts/fontawesome-free-5.13.0-web/css/all.css";
+@import "../../../public/fonts/fontawesome-free-5.13.0-web/css/all.css";
 
 .navbar{/*стили для навигационной панели*/
     position: relative;

@@ -8,16 +8,6 @@ Vue.use(VueRouter)
     name: 'Home',
     component: () => import('@/components/Routers/HomePage.vue')
   },
- /* {
-    path: '/',
-    name: 'Navbar',
-    component: () => import('@/components/Navbar.vue')
-  }
-  /*{
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue')
-  }*/
 ]
 
 const router = new VueRouter({

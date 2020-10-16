@@ -47,30 +47,30 @@
                 </div>
                 <div class="card">
                     <div class="for-card-box">
-                        <img src="../logo brands/card/business-and-finance.svg" alt="">
+                        <img src="../../../public/logo brands/card/business-and-finance.svg" alt="">
                     </div>
                     <div class="for-card-box">
-                        <img src="../logo brands/card/credit-card.svg" alt="">
+                        <img src="../../../public/logo brands/card/credit-card.svg" alt="">
                     </div>
                     <div class="for-card-box">
-                        <img src="../logo brands/card/kiwi.svg" alt="">
+                        <img src="../../../public/logo brands/card/kiwi.svg" alt="">
                     </div>
                     <div class="for-card-box">
-                        <img src="../logo brands/card/money-card.svg" alt="">
+                        <img src="../../../public/logo brands/card/money-card.svg" alt="">
                     </div>
                     <div class="for-card-box">
-                        <img src="../logo brands/card/paypal.svg" alt="">
+                        <img src="../../../public/logo brands/card/paypal.svg" alt="">
                     </div>
                 </div>
             </div>
         </div>
         <div class="bot">
             <div class="social">
-                <div class="pic facebook"><img src="../logo brands/social/facebook.svg" alt=""></div>
-                <div class="pic twitter"><img src="../logo brands/social/brands-and-logotypes.svg" alt=""></div>
-                <div class="pic in"><img src="../logo brands/social/logotype (1).svg" alt=""></div>
-                <div class="pic youtube"><img src="../logo brands/social/videos.svg" alt=""></div>
-                <div class="pic googleplus"><img src="../logo brands/social/logotype.svg" alt=""></div>
+                <div class="pic facebook"><img src="../../../public/logo brands/social/facebook.svg" alt=""></div>
+                <div class="pic twitter"><img src="../../../public/logo brands/social/brands-and-logotypes.svg" alt=""></div>
+                <div class="pic in"><img src="../../../public/logo brands/social/logotype (1).svg" alt=""></div>
+                <div class="pic youtube"><img src="../../../public/logo brands/social/videos.svg" alt=""></div>
+                <div class="pic googleplus"><img src="../../../public/logo brands/social/logotype.svg" alt=""></div>
             </div>
         </div>
     </div> 
