@@ -4,7 +4,7 @@
     <router-link to="/Home"></router-link>
     <router-view/>
     <Footer></Footer>
-  </div> 
+  </div>  
 </template>  
 
 <script>
