@@ -27,7 +27,7 @@
     src: url("../public/fonts/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.eot");
     src: url("../public/fonts/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../public/fonts/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.woff2") format("woff2"), url("../public/fonts/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.woff") format("woff"), url("../public/fonts/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.ttf") format("truetype"), url("../public/fonts/fontawesome-free-5.13.0-web/webfonts/fa-regular-400.svg#fontawesome") format("svg"); }
   
-  .far {
+  .far {  
     font-family: 'Font Awesome 5 Free';
     font-weight: 400; 
 } 
@@ -42,7 +42,7 @@
 		url('../public/fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('../public/fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.ttf') format('truetype'), /* Safari, Android, iOS */
         url('../public/fonts/e0f79531a9eb181d09140c8e33656263/fonts/oswald_demibold.svg#oswald_demibold') format('svg'); /* Chrome < 4, Legacy iOS */
-}
+} 
 .app{
   width: 100%;
   height: 100%;
