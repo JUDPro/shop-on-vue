@@ -5,7 +5,7 @@
     <router-view/>
     <Footer></Footer>
   </div> 
-</template>
+</template>  
 
 <script>
   import Navbar from './components/Header/Navbar.vue'
@@ -32,7 +32,7 @@
     font-weight: 400; 
 } 
 @font-face{/*подключение шрифтов*/
-    font-family: 'RobotoSlab';
+    font-family: 'RobotoSlab'; 
     src: url("../public/fonts/robotoslab/RobotoSlab-Regular.ttf");
 }
 @font-face {
