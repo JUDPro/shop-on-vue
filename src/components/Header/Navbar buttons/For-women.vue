@@ -11,7 +11,7 @@
                 <div class="text">Sweaters</div>
                 <div class="text">Bottoms</div>
                 <div class="text">Pants</div>   
-            </div>
+            </div> 
             <div class="content-winter-style">
                 <h4>Winter Style</h4>
                 <div class="text">Down Jackets</div>
@@ -83,10 +83,10 @@ export default {}
 .container:before{
     content: '';
     position: absolute;
-    width: 80px;
+    width: 100px;
     height: 80px;
     top: -30px;
-    left: 37%;
+    left: 45%;
 }
 .content{
     width: 260px;

@@ -83,10 +83,10 @@ export default {}
 .container:before{
     content: '';
     position: absolute;
-    width: 80px;
+    width: 100px;
     height: 80px;
     top: -30px;
-    left: 37%;
+    left: 36%;
 }
 .content{
     width: 260px;
